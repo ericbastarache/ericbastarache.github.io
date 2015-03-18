@@ -1,4 +1,10 @@
 body {
   min-height: 2000px;
   padding-top: 70px;
+  background-color: #fff;
+}
+.navbar {
+  background-color: #00000c;
+  color: #fff;
+  border-color: #000;
 }
