@@ -3,15 +3,30 @@ body {
   padding-top: 70px;
   background-color: #fff;
 }
+
 .navbar {
   background-color: #D8D8D8;
   color: #fff;
   border-color: #000;
 }
+
 .bigicon {
   font-size: 35px;
   color: #36A0FF;
 }
+
 .well-sm {
   background-color: #cdcdcd;
+}
+
+#frame {
+    width: 800px;
+    height: 520px;
+    border: none;
+    -moz-transform: scale(0.2);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(0.2);
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale(0.2);
+    -webkit-transform-origin: 0 0;
 }
