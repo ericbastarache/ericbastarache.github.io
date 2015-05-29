@@ -20,8 +20,8 @@ body {
 }
 
 #frame {
-    width: 400px;
-    height: 400px;
+    width: 800px;
+    height: 800px;
     border: none;
     -moz-transform: scale(0.2);
     -moz-transform-origin: 0 0;
