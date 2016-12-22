@@ -1,552 +1,447 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-
+  <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--<meta http-equiv="Cache-control" content="max-age=86400">-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content="Eric Bastarache">
+    <meta name="description" content="Welcome to my Portfolio!">
+    <meta name="keywords" content="portfolio, web, development, responsive, css3, html5, bootstrap">
 
-    <title>Eric Bastarache - Porfolio</title>
+    <title>Eric Bastarache - Portfolio</title>
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <link href="css/styles.min.css" rel="stylesheet">
-
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!--Font Awesome Icons -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!--Language Icons -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+    <!--Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Candal" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <!--Custom Styles -->
+    <link rel="stylesheet" href="css/portfolio.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
-</head>
-
-<body id="page-top" class="index">
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#page-top">Eric Bastarache</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#skills">Skills</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#about">About</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+  </head>
+  <body>
+    <div id="home">
+      <img class="img-responsive" src="images/main-image.jpg" alt="Computer Desk">
+      <div class="hidden-sm hidden-xs overlay">
+        <img class="profile-pic img-responsive" src="images/profilepic.jpg" alt="Profile Picture">
+        <h1 class="text-center">Eric Bastarache</h1>
+        <h3 class="text-center">Web Developer</h3>
+      </div>
+    </div>
+    <nav class="navbar navbar-portfolio" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
         </div>
-        <!-- /.container-fluid -->
+
+
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="nav navbar-nav nav-portfolio">
+            <li class="active"><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
-
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <img class="img-responsive" src="img/profile.png" alt="">
-                    <div class="intro-text">
-                        <span class="name">Eric Bastarache</span>
-                        <hr class="star-light">
-                        <span class="skills">Web Developer - Front End Enthusiast - Web Designer</span>
-                    </div>
-                </div>
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-lg-12">
+            <div class="wrapper">
+              <h1 class="text-center">About Me</h1>
+              <h3 class="text-center">Eric Bastarache - Web Developer from Toronto, Ontario</h3>
+              <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel optio provident perspiciatis voluptatibus consequatur maxime odit doloribus velit, nesciunt mollitia, consequuntur inventore sapiente? Iure tempora dicta nihil minus ullam. Quae.</p>
+              <q>I engage in lifelong learning not because I must; I learn to grow for learning is a gift, not a chore</q>
+              <div class="text-center">
+                <a href="documents/EricBastarache-Resume.doc" class="btn btn-lg btn-portfolio" download>Download Resume</a>
+              </div>
             </div>
+          </div>
         </div>
-    </header>
+      </div>
+    </section>
+    <section id="skills">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="text-center">Skills</h1>
+            <h3 class="text-center">Languages & tools I know</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-3">
+            <i class="devicon-bootstrap-plain-wordmark colored"></i>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-3">
+            <i class="devicon-css3-plain-wordmark colored"></i>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-3">
+            <i class="devicon-github-plain-wordmark colored"></i>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-3">
+            <i class="devicon-git-plain-wordmark colored"></i>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-3">
+            <i class="devicon-html5-plain-wordmark colored"></i>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-3">
+            <i class="devicon-javascript-plain colored"></i>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-3">
+            <i class="devicon-jquery-plain colored"></i>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-3">
+            <i class="devicon-laravel-plain-wordmark colored"></i>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-3">
+            <i class="devicon-php-plain colored"></i>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-3">
+            <i class="devicon-less-plain-wordmark colored"></i>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-3">
+            <i class="devicon-nodejs-plain colored"></i>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-3">
+            <i class="devicon-react-original-wordmark colored"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="experience">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="text-center">Experience</h1>
+            <h3 class="text-center">Where I've Worked</h3>
+          </div>
+        </div>
+        <ul class="timeline">
+          <li>
+            <div class="timeline-badge">
+              <a><i class="fa fa-circle" id=""></i></a>
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4>Model and Talent Services</h4>
+              </div>
+              <div class="timeline-body">
+                <p>Worked on a demo reel website for users who wanted to host their demo reels.</p>
+              </div>
+              <div class="timeline-footer">
+                <p class="text-right">May 2013 - January 2014</p>
+              </div>
+            </div>
+          </li>
 
-    <!-- Portfolio Grid Section -->
+          <li class="timeline-inverted">
+            <div class="timeline-badge">
+              <a><i class="fa fa-circle invert" id=""></i></a>
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4>Silver Digital Advertising & Marketing</h4>
+              </div>
+              <div class="timeline-body">
+                <p>Worked on CRUD operations for an Admin panel</p>
+                <p>Created database and tables</p>
+                <p>Used Ajax requests to modify and update data as required</p>
+              </div>
+              <div class="timeline-footer">
+                <p class="text-right">June 2015 - June 2015 (1 Month)</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-badge">
+              <a><i class="fa fa-circle" id=""></i></a>
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4>Freelance Web Development</h4>
+              </div>
+              <div class="timeline-body">
+                <p>Developed photography website for photographer with store, blog and admin panel included</p>
+                <p>Created a Discord bot using NodeJS, Discord.js and various APIs</p>
+                <p>Created a weather application using React & OpenWeatherMap API</p>
+                <p>Used Laravel to create an eCommerce application</p>
+              </div>
+              <div class="timeline-footer">
+                <p class="text-right">December 2015 - Current</p>
+              </div>
+            </div>
+          </li>
+          <!--Extra markup goes here -->
+          <li class="clearfix no-float"></li>
+        </ul>
+      </div>
+    </section>
     <section id="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Portfolio</h2>
-                    <hr class="star-primary">
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-lg-12">
+            <h1 class="text-center">Portfolio</h1>
+            <h3 class="text-center">Latest Work</h3>
+          </div>
+          <div class="p-items col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="hovereffect">
+              <img class="img-responsive" src="http://placehold.it/350x200" alt="">
+              <div class="overlay">
+                <h2>Butler Photography</h2>
+                <a class="info" href="#">See it here</a>
+              </div>
             </div>
-            <div class="row">
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/mock.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/resume.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/game.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/meme.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-				<div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/neighbourhood.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/testing.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal7" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/optimization.png" class="img-responsive" alt="">
-                    </a>
-                </div>
+          </div>
+          <div class="p-items col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="hovereffect">
+              <img class="img-responsive" src="images/mock.png" alt="Image of mockup result">
+              <div class="overlay">
+                <h2>Mockup to HTML and CSS</h2>
+                <a class="info" href="http://ericbastarache.github.io/frontend-nanodegree-portfolio/index.html">See it here</a>
+              </div>
             </div>
+          </div>
+          <div class="p-items col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="hovereffect">
+              <img class="img-responsive" src="images/resume.png" alt="Image of online resume">
+              <div class="overlay">
+                <h2>Online Resume</h2>
+                <a class="info" href="http://ericbastarache.github.io/frontend-nanodegree-resume/index.html">See it here</a>
+              </div>
+            </div>
+          </div>
+          <div class="p-items col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="hovereffect">
+              <img class="img-responsive" src="images/game.png" alt="">
+              <div class="overlay">
+                <h2>Frogger Clone</h2>
+                <a class="info" href="http://ericbastarache.github.io/frontend-nanodegree-arcade-game/index.html">See it here</a>
+              </div>
+            </div>
+          </div>
+          <div class="p-items col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="hovereffect">
+              <img class="img-responsive" src="images/meme.png" alt="Image of meme maker">
+              <div class="overlay">
+                <h2>Meme Maker</h2>
+                <a class="info" href="http://ericbastarache.github.io/meme-maker/index.html">See it here</a>
+              </div>
+            </div>
+          </div>
+          <div class="p-items col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="hovereffect">
+              <img class="img-responsive" src="images/neighbourhood.png" alt="Image of neighbourhood map">
+              <div class="overlay">
+                <h2>Neighbourhood Map</h2>
+                <a class="info" href="http://ericbastarache.github.io/neighbourhood-map/index.html">See it here</a>
+              </div>
+            </div>
+          </div>
+          <div class="p-items col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="hovereffect">
+              <img class="img-responsive" src="images/testing.png" alt="Image of feed reader">
+              <div class="overlay">
+                <h2>Feed Reader Testing</h2>
+                <a class="info" href="http://ericbastarache.github.io/frontend-nanodegree-feedreader/index.html">See it here</a>
+              </div>
+            </div>
+          </div>
+          <div class="p-items col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="hovereffect">
+              <img class="img-responsive" src="images/optimization.png" alt="Image of view optimized for mobile performance">
+              <div class="overlay">
+                <h2>Mobile Optimization</h2>
+                <a class="info" href="http://ericbastarache.github.io/frontend-nanodegree-mobile-portfolio/views/pizza.html">See it here</a>
+              </div>
+            </div>
+          </div>
+          <div class="p-items col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="hovereffect">
+              <img class="img-responsive" src="http://placehold.it/350x200" alt="">
+              <div class="overlay">
+                <h2>React Redux Weather</h2>
+                <a class="info" href="#">See it here</a>
+              </div>
+            </div>
+          </div>
+          <div class="p-items col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="hovereffect">
+              <img class="img-responsive" src="http://placehold.it/350x200" alt="">
+              <div class="overlay">
+                <h2>React Redux Simple Blog</h2>
+                <a class="info" href="#">See it here</a>
+              </div>
+            </div>
+          </div>
+          <div class="p-items col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="hovereffect">
+              <img class="img-responsive" src="http://placehold.it/350x200" alt="">
+              <div class="overlay">
+                <h2>NodeJS Discord Bot</h2>
+                <a class="info" href="https://github.com/ericbastarache/InfoBot">See it here</a>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
-    
-    <!-- Skills section -->
-    <section class="success" id="skills">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Skills</h2>
-                    <hr class="star-light">
+    <section id="testimonials">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-lg-12">
+            <h1 class="text-center">Testimonials</h1>
+            <h3 class="text-center">Satisfied Clients</h3>
+            <div class="col-md-8 col-md-offset-2">
+              <div class="quote"><i class="fa fa-quote-left fa-4x"></i></div>
+              <div class="carousel slide" id="fade-quote-carousel" data-ride="carousel" data-interval="3000">
+                <!-- Carousel indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#fade-quote-carousel" data-slide-to="0" class="active"></li>
+                  <!--<li data-target="#fade-quote-carousel" data-slide-to="1"></li>
+                  <li data-target="#fade-quote-carousel" data-slide-to="2"></li>
+                  <li data-target="#fade-quote-carousel" data-slide-to="3"></li>
+                  <li data-target="#fade-quote-carousel" data-slide-to="4"></li>
+                  <li data-target="#fade-quote-carousel" data-slide-to="5"></li>-->
+                </ol>
+                <!-- Carousel items -->
+                <div class="carousel-inner">
+                  <div class="active item">
+                    <img src="http://placehold.it/50x50" class="profile-circle" style="background-color: rgba(0,0,0,.2);">
+                    <blockquote>
+                      <p>Eric’s work is specific to the clients needs and strives to be as professional and modern as possible making it a pleasure to work with him</p>
+                    </blockquote>
+                    <h4 class="text-center">Evelyn Butler - butlerphotography.com</h4>
+                  </div>
+                  <!--<div class="item">
+                    <div class="profile-circle" style="background-color: rgba(77,5,51,.2);"></div>
+                    <blockquote>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
+                    </blockquote>
+                  </div>
+                  <div class="active item">
+                    <div class="profile-circle" style="background-color: rgba(145,169,216,.2);"></div>
+                    <blockquote>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
+                    </blockquote>
+                  </div>
+                  <div class="item">
+                    <div class="profile-circle" style="background-color: rgba(77,5,51,.2);"></div>
+                    <blockquote>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
+                    </blockquote>
+                  </div>
+                  <div class="item">
+                    <div class="profile-circle" style="background-color: rgba(77,5,51,.2);"></div>
+                    <blockquote>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
+                    </blockquote>
+                  </div>
+                  <div class="item">
+                    <div class="profile-circle" style="background-color: rgba(77,5,51,.2);"></div>
+                    <blockquote>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
+                    </blockquote>
+                  </div>-->
                 </div>
+              </div>
             </div>
-            <div class="row">
-                <div class="col-lg-6 text-center">
-                    <canvas id="canvas" height="150" width="200"></canvas>
-                </div>
-            </div>
+          </div>
         </div>
+      </div>
     </section>
-
-    <!-- About Section -->
-    <section class="portfolio" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>About</h2>
-                    <hr class="star-primary">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-lg-offset-2">
-                    <p>With 5 years experience using HTML, CSS, JavaScript, and jQuery and 2 years professional experience with web development and responsive design, I can build you your dream website</p>
-                </div>
-                <div class="col-lg-4">
-                    <p>Whether you're looking for a personal website or a website for business purposes, we can work together on a website from design to implementation that you can truly feel proud of using!</p>
-                </div>
-                
-            </div>
+    <section id="contact">
+      <div class="container contact-container">
+        <div class="row">
+          <div class="col-md-12 col-lg-12">
+            <h1 class="text-center">Contact Me</h1>
+            <h3 class="text-center">Send me a message</h3>
+          </div>
         </div>
+        <div class="row">
+          <div class="col-md-4 col-lg-4">
+            <div class="address-holder">
+              <i class="fa fa-3x fa-home"></i>
+              <address>
+                739 Birchmount Road <br />
+                Toronto, ON M1K 1R6
+              </address>
+            </div>
+            <div class="email-holder">
+              <i class="fa fa-3x fa-envelope-o"></i>
+              <a href="mailto:eric_bastarache@hotmail.com">eric_bastarache@hotmail.com</a>
+            </div>
+            <div class="telephone-holder">
+              <i class="fa fa-3x fa-phone"></i>
+              <a href="tel:+16477418731">647.741.8731</a>
+            </div>
+          </div>
+          <form class="form-horizontal">
+            <div class="col-md-4 col-lg-4">
+              <div class="form-group">
+                <div class="col-sm-12">
+                  <input type="text" class="form-control" placeholder="Name" required>
+                </div>
+                <div class="col-sm-12">
+                  <input type="text" class="form-control" placeholder="Email" required>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-lg-4">
+              <div class="form-group">
+                <div class="col-sm-12">
+                  <textarea rows="3" class="form-control" placeholder="Message" required></textarea>
+                  <button type="submit" class="pull-right btn btn-portfolio">Send Message</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
     </section>
-
-    <!-- Contact Section -->
-    <section class="success" id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Contact Me</h2>
-                    <hr class="star-light">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                <p>Feel free to contact me at <a href="mailto:eric_bastarache@hotmail.com">eric_bastarache@hotmail.com</a>for any inquiries regarding my web design/development services.</p>
-                </div>
-            </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-6 col-md-offset-4 col-lg-offset-4">
+            <ul class="social-icons">
+              <li>
+                <a href="https://twitter.com/ericbastarache"><i class="fa fa-2x fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="https://ca.linkedin.com/in/ericbastarache"><i class="fa fa-2x fa-linkedin"></i></a>
+              </li>
+              <li>
+                <a href="https://github.com/ericbastarache"><i class="fa fa-2x fa-github"></i></a>
+              </li>
+            </ul>
+            <p class="copy-text">&copy; Eric Bastarache 2016</p>
+          </div>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="text-center">
-        <div class="footer-above">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-col col-md-4">
-                        <h3>Location</h3>
-                        <p>Toronto<br>Scarborough, ON M1K 1R6</p>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3>Around the Web</h3>
-                        <ul class="list-inline">
-                            <li>
-                                <a href="https://twitter.com/EricBastarache" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://instagram.com/ericb31" class="btn-social btn-outline"><i class="fa fa-fw fa-instagram"></i></a>
-                            <li>
-                                <a href="https://ca.linkedin.com/pub/eric-bastarache/5a/6b/74a" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/ericbastarache" class="btn-social btn-outline"><i class="fa fa-fw fa-github"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3>About Me</h3>
-                        <p>Freelance web developer/designer with a specialty in front end development <a href="https://ericbastarache.github.io">Github Pages</a>.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-below">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        Copyright &copy; Eric Bastarache 2015
-                    </div>
-                </div>
-            </div>
-        </div>
+      </div>
     </footer>
-
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-    <div class="scroll-top page-scroll">
-        <a class="btn btn-primary" href="#page-top">
-            <i class="fa fa-chevron-up"></i>
-        </a>
-    </div>
-
-    <!-- Portfolio Modals -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Web page Mockup</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/mock.png" class="img-responsive img-centered" alt="Mockup">
-                            <p>Mockup converted from image to design. The project above can be found here <a href="https://ericbastarache.github.io/frontend-nanodegree-portfolio/index.html">Mockup</a>.</p>
-                            <ul class="list-inline item-details">
-                                <li>Project:
-                                    <strong><a href="http://ericbastarache.github.io/frontend-nanodegree-portfolio/index.html">Mockup Web Page</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong>February 2015
-                                    </strong>
-                                </li>
-                                <li>Industry:
-                                    <strong>Web Design
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Online Resume</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/resume.png" class="img-responsive img-centered" alt="Resume Screenshot">
-                            <p>Online Resume showcasing my skills. Resume data loaded with the use of JSON. The project above can be found here <a href="http://ericbastarache.github.io/frontend-nanodegree-resume/index.html">Resume</a>.</p>
-                            <ul class="list-inline item-details">
-                                <li>Project:
-                                    <strong><a href="http://ericbastarache.github.io/frontend-nanodegree-resume/index.html">Resume</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong>March 2015
-                                    </strong>
-                                </li>
-                                <li>Industry:
-                                    <strong>Web Development
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Arcade Game</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/circus.png" class="img-responsive img-centered" alt="Arcade game">
-                            <p>Clone of the classic Frogger Arcade game. The above project can be found here <a href="http://ericbastarache.github.io/frontend-nanodegree-arcade-game/index.html">Arcade Game</a>.</p>
-                            <ul class="list-inline item-details">
-                                <li>Project:
-                                    <strong><a href="http://ericbastarache.github.io/frontend-nanodegree-arcade-game/index.html">Start Arcade Game</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong>April 2015
-                                    </strong>
-                                </li>
-                                <li>Industry:
-                                    <strong>Web Development/Game Design
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Meme Maker</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/meme.png" class="img-responsive img-centered" alt="meme maker">
-                            <p>Meme maker. Fun to use if you're bored or enjoy making memes. The above project can be found here <a href="http://ericbastarache.github.io/meme-maker/index.html">Meme Maker</a>.</p>
-                            <ul class="list-inline item-details">
-                                <li>Project:
-                                    <strong><a href="http://ericbastarache.github.io/meme-maker/index.html">Meme Maker</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong>April 2015
-                                    </strong>
-                                </li>
-                                <li>Industry:
-                                    <strong>Web Development
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Neighbourhood Map</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/neighbourhood.png" class="img-responsive img-centered" alt="neighbourhood map">
-                            <p>This is my neighbourhood map application using the Foursquare API, AJAX, and the Google Maps API to retrieve data about tourist attractions in the Toronto area. This project can be found here:<a href="http://ericbastarache.github.io/neighbourhood-map/index.html">Neighbourhood Map</a>.</p>
-                            <ul class="list-inline item-details">
-                                <li>Project:
-                                    <strong><a href="http://ericbastarache.github.io/neighbourhood-map/index.html">Neighbourhood Map</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong>May 2015
-                                    </strong>
-                                </li>
-                                <li>Industry:
-                                    <strong>Web Development
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-	<div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Feed Reader Testing</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/testing.png" class="img-responsive img-centered" alt="testing">
-                            <p>Feed Reader Testing with Jasmine. This example of testing showcases various tests and why it's important to test your applications. The above project can be found here <a href="http://ericbastarache.github.io/frontend-nanodegree-feedreader/index.html">Feed Reader</a>.</p>
-                            <ul class="list-inline item-details">
-                                <li>Project:
-                                    <strong><a href="http://ericbastarache.github.io/frontend-nanodegree-feedreader/index.html">Feed Reader</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong>May 2015
-                                    </strong>
-                                </li>
-                                <li>Industry:
-                                    <strong>Web Development
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Performance Optimization</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/optimization.png" class="img-responsive img-centered" alt="performance optimization">
-                            <p>Portfolio Optimization which ensures this website view runs at 60 FPS on all computers. The above project can be found here <a href="http://ericbastarache.github.io/frontend-nanodegree-mobile-portfolio/views/pizza.html">Mobile Optimization</a>.</p>
-                            <ul class="list-inline item-details">
-                                <li>Project:
-                                    <strong><a href="http://ericbastarache.github.io/frontend-nanodegree-mobile-portfolio/views/pizza.html">Mobile Optimization</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong>May 2015
-                                    </strong>
-                                </li>
-                                <li>Industry:
-                                    <strong>Web Development
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script src="js/jQuery.js"></script>
-
-    <script src="js/bootstrap.min.js"></script>
-
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="js/classie.min.js"></script>
-    <script src="js/cbpAnimatedHeader.min.js"></script>
-    <script src="js/skills-chart.js"></script>
-    <script src="js/Chart.min.js"></script>
-
-    <script src="js/main.min.js"></script>
-
-</body>
-
+    <!-- jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Other Plugins -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  </body>
 </html>
