@@ -17,19 +17,28 @@ function validate () {
 
 function validateName (name) {
   if(name === "") {
+    document.getElementById('name').class += " field-error";
     return name = "Not entered";
   }
+  document.getElementById('name').class += " field-success";
   return name;
 }
 
 function validateEmail (email) {
   var emailExp = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
-  return emailExp.test(email);
+  if(!emailExp.test(email)){
+    document.getElementById('email').class += " field-error";
+  } else {
+    document.getElementById('email').class += " field-success";
+    return emailExp.test(email);
+  }
 }
 
 function validateMessage (subject) {
   if (subject === "") {
+    document.getElementById('subject').class += " field-error";
     return subject = "Not entered";
   }
+  document.getElementById('name').class += " field-success";
   return subject;
 }
