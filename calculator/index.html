@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JavaScript Calculator</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="calculator">
+            <!--Screen-->
+            <p class="screen text-right"></p>
+            <!--Clear Button-->
+            <button id="clear" class="btn btn-calc">C</button>
+            <button class="btn btn-calc">÷</button>
+            <!--Button numbers -->
+            <div class="row">
+              <div class="col-sm-12">
+                <button class="btn btn-calc" value="7">7</button>
+                <button class="btn btn-calc" value="8">8</button>
+                <button class="btn btn-calc" value="9">9</button>
+                <button class="btn btn-calc">x</button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <button class="btn btn-calc" value="4">4</button>
+                <button class="btn btn-calc" value="5">5</button>
+                <button class="btn btn-calc" value="6">6</button>
+                <button class="btn btn-calc">-</button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <button class="btn btn-calc" value="1">1</button>
+                <button class="btn btn-calc" value="2">2</button>
+                <button class="btn btn-calc" value="3">3</button>
+                <button class="btn btn-calc">+</button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12 moveLeft">
+                <button class="btn btn-calc" value="0">0</button>
+                <button class="btn btn-calc">=</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/calculator.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  </body>
+</html>
