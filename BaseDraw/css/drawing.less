@@ -1,0 +1,87 @@
+body {
+  background-color: #404040;
+  color: #fff;
+}
+
+canvas {
+  background-color: #fff;
+  border: 1px solid black;
+  box-shadow: 0 0 0.375em black;
+  display: block;
+  width: 100%;
+  height: 53.125em;
+}
+
+.color-button-list {
+  list-style: none;
+  li {
+    .btn-color {
+      width: 1.125em;
+      height: 1.125em;
+      border-radius: 0em;
+    }
+
+    input[type=color] {
+      width: 2.125em;
+      height: 2.125em;
+      border-radius: 0em;
+    }
+  }
+}
+
+.toolbox-items {
+  list-style: none;
+  li {
+    button {
+      background-color: #000;
+      color: #ffffff;
+      text-decoration: none;
+      box-shadow: 0 0 0.375em #000;
+      border: none;
+      margin-bottom: 0.313em;
+      i {
+        padding: 0.282em;
+      }
+    }
+    .line {
+      padding: 0em 0.282em 0em 0.282em;
+      box-shadow: 0 0 0.375em #000;
+      font-size: 2.500em;
+    }
+    #gradient {
+      width: 3.125em;
+      height: 3.125em;
+      padding: 0em 0.282em 0em 0.282em;
+      background: linear-gradient(to right, #ccc, #000);
+    }
+  }
+}
+
+#choice {
+  width: 4.250em;
+  height: 2.250em;
+}
+
+#download {
+  margin-top: 0.938em;
+  a {
+    font-size: 2.200em;
+    color: #ffffff;
+  }
+}
+
+#text {
+  font-size: 2.200em;
+}
+
+#brush-tool {
+  display: none;
+}
+
+#gradient-tool {
+  display: none;
+}
+
+#text-tool {
+  display: none;
+}
