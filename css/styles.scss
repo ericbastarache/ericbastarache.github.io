@@ -1,0 +1,143 @@
+$white: #fff;
+$black: #000;
+$roboto: 'Roboto', sans-serif;
+$lato: 'Lato', sans-serif;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  position: relative;
+  border: 8px solid #414142;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+nav.navbar-portfolio {
+  button.navbar-toggle {
+    span.icon-bar {
+      background: $black;
+    }
+  }
+  border: none;
+  margin-top: 40px;
+  ul.navbar-nav {
+    li a {
+      font-size: 16px;
+      color: $black;
+      &:hover {
+        background: transparent;
+      }
+    }
+  }
+
+  ul.navbar-right {
+    li a {
+      i.fa.fa-twitter, i.fa.fa-linkedin, i.fa.fa-github {
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+h1, h2, h3, h4, h5, h6 { font-family: $lato; }
+p {
+  font-family: $roboto;
+  line-height: 2em;
+}
+
+img.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50% 50%;
+}
+
+section.technology {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  h1 {
+    margin-bottom: 20px;
+  }
+  i {
+    font-size: 100px;
+  }
+}
+
+section.contact {
+  margin-top: 40px;
+  border-top: 1px solid #e7e7e7;
+  border-bottom: 1px solid #e7e7e7;
+  padding-bottom: 50px;
+  h1 {
+    margin-bottom: 50px;
+  }
+  a.contact-detail {
+    padding: 20px;
+    border: 1px solid $black;
+    color: $black;
+    background-color: $white;
+    text-decoration: none;
+  }
+}
+
+footer.footer {
+  position: absolute;
+  bottom: 0;
+  height: 60px;
+  width: 100%;
+  p {
+    font-size: 16px;
+    padding-top: 10px;
+  }
+}
+
+/* Project Page Styles */
+section.projects {
+  h1.project-heading { margin-left: 38px;}
+  p { margin-left: 38px; }
+  div.project {
+    margin-bottom: 15px;
+    border: 1px solid $black;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  ul.technologies {
+    list-style: none;
+    li {
+      display: inline-block;
+      padding: 5px;
+      border: 1px solid $black;
+      border-radius: 5px;
+      color: $white;
+      background-color: $black;
+    }
+  }
+  ul.download-installer {
+    margin-top: 20px;
+    list-style: none;
+    li {
+      display: inline-block;
+      a {
+        text-decoration: none;
+        padding: 5px;
+        border: 1px solid $black;
+        color: $white;
+        background-color: $black;
+        border-radius: 5px;
+      }
+    }
+  }
+}
+
+/* Media Queries */
+@media(min-width: 320px) {
+  a.contact-detail {
+    float: left;
+    margin-bottom: 10px;
+    margin-right: 5px;
+  }
+}
